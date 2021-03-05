@@ -1,0 +1,13 @@
+1er essai :
+rm -rf ~/.config/JetBrains/RubyMine2020.2/eval/
+rm -rf ~/.config/JetBrains/RubyMine2020.2/options/other.xml
+sed -i -E 's/<property name=\"evl.*\".*\/>//' ~/.config/JetBrains/RubyMine2020.2/options/other.xml
+
+2ème essai :
+License Rubymine :
+rm -rf ~/.java/.userPrefs/jetbrains/idea
+rm -rf ~/.RubyMine*/config/eval
+rm -rf ~/.java/.userPrefs/jetbrains/rubymine
+sed -i '/evlsprt/d' ~/.RubyMine*/config/options/other.xml
+sed -i '/evlsprt/d' ~/.config/JetBrains/RubyMine2020.2/options/other.xml
+sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml 
